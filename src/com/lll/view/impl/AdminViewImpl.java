@@ -18,6 +18,8 @@ public class AdminViewImpl implements AdminView
         System.out.println("请输入管理员密码");
         String password =input.next();
         AdminDao adminDao = new AdminDaoImpl();
+//      Admin admin = dao.getAdminByNameByPass(adminName, password);
+//      return admin;
         return adminDao.getAdminBynameBypw(adminname,password);
     }
 }
